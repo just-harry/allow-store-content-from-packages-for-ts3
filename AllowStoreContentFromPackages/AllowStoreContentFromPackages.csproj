@@ -1,0 +1,23 @@
+
+<!-- SPDX-LICENSE-IDENTIFIER: 0BSD -->
+
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net20</TargetFramework>
+		<LangVersion>11</LangVersion>
+		<AssemblySearchPaths>
+			$(AssemblyPath);
+			$(AssemblySearchPaths)
+		</AssemblySearchPaths>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<ItemGroup>
+		<Reference Include="MonoPatcher"></Reference>
+		<Reference Include="ScriptCore"></Reference>
+		<Reference Include="SimIFace"></Reference>
+	</ItemGroup>
+</Project>
+
